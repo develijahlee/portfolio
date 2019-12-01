@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "home": "홈",
+    "about": "자기소개",
+    "testimonials": "리뷰"
+  },
+  "home": {
+    "h1": "이엘리야",
+    "p1": "뛰어난 사용자 경험으로 고품질의 웹 사이트를 만드는 프론트 엔드 개발자입니다.",
+    "p2": "그는 영어에 능통하고 한국어에 능통합니다.",
+    "button": "이력서 보기"
+  },
+  "about": {
+    "h1": "DobrÃ½ den, jmenuji se Asif Vora.",
+    "p": "Jsem webovÃ½ vÃ½vojÃ¡Å z Indie. Specializuji se na JavaScript stack (Reagovat, Reagovat nativnÃ­, Redux) a na PHP stack (Core, Cake)."
+  },
+  "testimonials": {
+    "h1": "Zde jsou nejnovÄjÅ¡Ã­ pÅÃ­klady mÃ© prÃ¡ce.",
+    "h2": "Chcete-li se dozvÄdÄt vÃ­ce, prosÃ­m kontaktujte mne poÅ¡tou nebo na sociÃ¡lnÃ­ch mÃ©diÃ­ch odkazy na strÃ¡nce."
+  }
+}

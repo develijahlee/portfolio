@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "testimonials": "Testimonials"
+  },
+  "home": {
+    "h1": "Elijah Lee",
+    "p1": "is a frontend developer who creates high quality websites with exceptional user experience.",
+    "p2": "He has native proficiency in English and professional working proficiency in Korean.",
+    "button": "View CV"
+  },
+  "about": {
+    "h1": "Hello, my name is Elijah Lee.",
+    "p": "I'm a web developer from India. Iâm specialized on JavaScript stack (React, React Native, Redux) and on PHP stack (Core, Cake)."
+  },
+  "testimonials": {
+    "h1": "Here are the most recent examples of my work.",
+    "h2": "If you want to see more, please contact me by mail or on social media links on about page."
+  }
+}
