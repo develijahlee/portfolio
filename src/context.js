@@ -28,18 +28,15 @@ export class MyProvider extends Component {
       data = translationEN;
     }
     this.setState({
-      //isNavOpen: !this.state.isNavOpen, (does not open/close nav when language changes)
       language: language,
       data: data
     });
-    document.body.classList.toggle("nav-is-open");
   };
 
   toggleNav = () => {
     this.setState({
       isNavOpen: !this.state.isNavOpen
     });
-    document.body.classList.toggle("nav-is-open");
   };
 
   render() {

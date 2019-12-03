@@ -5,10 +5,6 @@ import React from "react";
 // Import context and provider
 import { MyContext } from "../../context";
 
-// Import CSS
-import "../styles/grid.css";
-import "../styles/pages/about.css";
-
 const About = () => {
   return (
     <MyContext.Consumer>

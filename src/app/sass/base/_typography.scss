@@ -1,0 +1,9 @@
+/* src/app/sass/base/typography.scss */
+
+:root {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(.6rem + 1vw);
+ @include md {
+    font-size: calc(.5rem + 1vw);
+  }
+}
