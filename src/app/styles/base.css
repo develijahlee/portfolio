@@ -1,1 +1,10 @@
 /* src/app/styles/base.css */
+.js-nav {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s linear;
+}
+
+.active {
+  max-height: 10rem;
+}

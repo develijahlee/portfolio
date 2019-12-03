@@ -12,10 +12,10 @@
   },
   "about": {
     "h1": "Hello, my name is Elijah Lee.",
-    "p": "I'm a web developer from India. Iâm specialized on JavaScript stack (React, React Native, Redux) and on PHP stack (Core, Cake)."
+    "p": "I'm a frontend developer from Korea. I am specialized on JavaScript stack."
   },
   "testimonials": {
     "h1": "Here are the most recent examples of my work.",
-    "h2": "If you want to see more, please contact me by mail or on social media links on about page."
+    "h2": "If you want to see more of my work please check my email or social media."
   }
 }
