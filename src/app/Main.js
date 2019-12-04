@@ -15,9 +15,6 @@ import About from "./pages/About";
 // Import components
 import Header from "./components/Header";
 
-// Import CSS
-import "./sass/index.scss";
-
 // Component Implementation
 const Main = () => {
   return (

@@ -1,14 +1,59 @@
 /* src/app/sass/base/components/header.scss */
+
+// General navgiation
 header {
   background: #663552;
+  a {
+    color: #fff;
+  }
 }
 
-.js-nav {
+.nav__bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em .5em;
+  > a {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-weight: 500;
+    svg {
+      margin-right: .15em;
+      height: 2em;
+    }
+  }
+}
+
+.nav__cabinet {
+  background: #1a1a1a;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s linear;
+  > ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    a {
+      display: block;
+      padding: 1em;
+      font-size: 1.5em;
+    }
+  }
 }
 
-.active {
-  max-height: 10rem;
+.jsNav-active {
+  max-height: 16em;
+}
+
+.btn {
+  width: 5em;
+}
+
+.languages {
+  display: flex;
+  list-style-type: none;
+  > li {
+    margin-right: 1em;
+  }
 }
