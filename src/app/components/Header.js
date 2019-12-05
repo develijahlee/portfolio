@@ -2,7 +2,8 @@
 
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Icon from "./Icon.js";
+import Logo from "./Logo.js";
+import Kebab from "./Kebab.js";
 
 class Header extends Component {
   render() {
@@ -12,7 +13,7 @@ class Header extends Component {
         <nav className="nav">
          <div className="nav__bar">
             <Link to="/">
-              <Icon />
+              <Logo />
               <span>Lee</span>
             </Link>
             <ul className="languages">
@@ -41,15 +42,17 @@ class Header extends Component {
                 </Link>
               </li>
             </ul>
-            <button
+            <button 
+                id="kebab"
                 type="button"
                 aria-label="Toggle navigation"
                 className="btn"
                 onClick={function() {
                   document.getElementById("jsNav").classList.toggle("jsNav-active");
+                  document.getElementById("kebab").classList.toggle("btn-active");
                 }}
               >
-                menu
+              <Kebab />
             </button>
           </div>
           <div id="jsNav" className="nav__cabinet">
