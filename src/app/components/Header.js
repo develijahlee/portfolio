@@ -11,10 +11,9 @@ class Header extends Component {
     return (
       <header>
         <nav className="nav">
-         <div className="nav__bar">
+          <div className="nav__bar">
             <Link to="/">
               <Logo />
-              <span>Lee</span>
             </Link>
             <ul className="languages">
               <li>
@@ -42,16 +41,18 @@ class Header extends Component {
                 </Link>
               </li>
             </ul>
-            <button 
-                id="kebab"
-                type="button"
-                aria-label="Toggle navigation"
-                className="btn"
-                onClick={function() {
-                  document.getElementById("jsNav").classList.toggle("jsNav-active");
-                  document.getElementById("kebab").classList.toggle("btn-active");
-                }}
-              >
+            <button
+              id="kebab"
+              type="button"
+              aria-label="Toggle navigation"
+              className="btn"
+              onClick={function() {
+                document
+                  .getElementById("jsNav")
+                  .classList.toggle("jsNav-active");
+                document.getElementById("kebab").classList.toggle("btn-active");
+              }}
+            >
               <Kebab />
             </button>
           </div>
@@ -64,11 +65,7 @@ class Header extends Component {
               </li>
 
               <li>
-                <Link
-                  className="link"
-                  to="/about"
-                  onClick={context.toggleNav}
-                >
+                <Link className="link" to="/about" onClick={context.toggleNav}>
                   {context.state.data.nav.about}
                 </Link>
               </li>
