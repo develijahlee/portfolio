@@ -8,11 +8,18 @@ import Kebab from "./Kebab.js";
 class Header extends Component {
   render() {
     let { context } = this.props;
+
+    // Open/Closes Navigation
+    const toggleNav = () => {
+      document.getElementById("jsNav").classList.toggle("jsNav-active");
+      document.getElementById("kebab").classList.toggle("btn-active");
+    };
+
     return (
       <header>
         <nav className="nav">
           <div className="nav__bar">
-            <Link to="/">
+            <Link to="/" onClick={toggleNav}>
               <Logo />
             </Link>
             <ul className="languages">
@@ -23,7 +30,7 @@ class Header extends Component {
                   }
                   onClick={context.changeLanguage}
                   data-language="en"
-                  href="/#"
+                  to="/#"
                 >
                   ENG
                 </Link>
@@ -35,7 +42,7 @@ class Header extends Component {
                   }
                   onClick={context.changeLanguage}
                   data-language="kr"
-                  href="/#"
+                  to="/#"
                 >
                   한국어
                 </Link>
@@ -46,12 +53,7 @@ class Header extends Component {
               type="button"
               aria-label="Toggle navigation"
               className="btn"
-              onClick={function() {
-                document
-                  .getElementById("jsNav")
-                  .classList.toggle("jsNav-active");
-                document.getElementById("kebab").classList.toggle("btn-active");
-              }}
+              onClick={toggleNav}
             >
               <Kebab />
             </button>
@@ -59,23 +61,19 @@ class Header extends Component {
           <div id="jsNav" className="nav__cabinet">
             <ul className="nav-list">
               <li>
-                <Link className="link" to="/" onClick={context.toggleNav}>
+                <Link className="link" to="/" onClick={toggleNav}>
                   {context.state.data.nav.home}
                 </Link>
               </li>
 
               <li>
-                <Link className="link" to="/about" onClick={context.toggleNav}>
+                <Link className="link" to="/about" onClick={toggleNav}>
                   {context.state.data.nav.about}
                 </Link>
               </li>
 
               <li>
-                <Link
-                  className="link"
-                  to="/testimonials"
-                  onClick={context.toggleNav}
-                >
+                <Link className="link" to="/testimonials" onClick={toggleNav}>
                   {context.state.data.nav.testimonials}
                 </Link>
               </li>

@@ -43,7 +43,7 @@
   background: #1a1a1a;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
+  //transition: max-height 0.5s ease-in-out; removed transitions in favor of better UX 
   @include md {
     background: none;
   }
@@ -88,7 +88,7 @@
   margin-right: .5em;
   background: transparent;
   border: none;
-  transition: transform 0.5s ease-in-out;
+  //transition: transform 0.5s ease-in-out;
   > svg {
     height: 3em;
   }
@@ -99,7 +99,7 @@
 
 .btn-active {
   transform: rotate(90deg);
-  transition: transform 0.5s ease-in-out;
+  //transition: transform 0.5s ease-in-out;
 }
 
 .languages {
