@@ -9,25 +9,28 @@ class Header extends Component {
   render() {
     let { context } = this.props;
 
-    // Open/Closes Navigation
+    // Open/closes navigation
     const toggleNav = () => {
       document.getElementById("jsNav").classList.toggle("jsNav-active");
       document.getElementById("kebab").classList.toggle("btn-active");
+    };
+
+    // Prevents navigation from opening when logo is clicked
+    const closeNav = () => {
+      document.getElementById("jsNav").classList.remove("jsNav-active");
+      document.getElementById("kebab").classList.remove("btn-active");
     };
 
     return (
       <header>
         <nav className="nav">
           <div className="nav__bar">
-            <Link to="/" onClick={toggleNav}>
+            <Link to="/" onClick={closeNav}>
               <Logo />
             </Link>
             <ul className="languages">
               <li>
                 <Link
-                  className={
-                    context.state.language === "en" ? "link-active" : "link"
-                  }
                   onClick={context.changeLanguage}
                   data-language="en"
                   to="/#"
@@ -37,9 +40,6 @@ class Header extends Component {
               </li>
               <li>
                 <Link
-                  className={
-                    context.state.language === "kr" ? "link-active" : "link"
-                  }
                   onClick={context.changeLanguage}
                   data-language="kr"
                   to="/#"
@@ -61,19 +61,19 @@ class Header extends Component {
           <div id="jsNav" className="nav__cabinet">
             <ul className="nav-list">
               <li>
-                <Link className="link" to="/" onClick={toggleNav}>
+                <Link to="/" onClick={toggleNav}>
                   {context.state.data.nav.home}
                 </Link>
               </li>
 
               <li>
-                <Link className="link" to="/about" onClick={toggleNav}>
+                <Link to="/about" onClick={toggleNav}>
                   {context.state.data.nav.about}
                 </Link>
               </li>
 
               <li>
-                <Link className="link" to="/testimonials" onClick={toggleNav}>
+                <Link to="/testimonials" onClick={toggleNav}>
                   {context.state.data.nav.testimonials}
                 </Link>
               </li>

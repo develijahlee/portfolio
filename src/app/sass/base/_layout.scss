@@ -2,3 +2,27 @@
 body {
   background: #663552;
 }
+
+.container {
+  margin: 0 auto;
+  max-width: calc(18rem + 5vw);
+  font-size: 1.25rem;
+  @include xs {
+    max-width: calc(23rem + 5vw);
+  }
+  @include sm {
+    max-width: calc(31rem + 5vw);
+  }
+  @include md {
+    max-width: calc(36rem + 5vw);
+  }
+  @include lg {
+    max-width: calc(39rem + 5vw);
+  }
+  @include xl {
+    max-width: calc(41rem + 5vw);
+  }
+  &__hero {
+    padding: 1.5em 0;
+  }
+}
