@@ -16,14 +16,19 @@ const Home = () => {
 
               <p>{context.state.data.home.p1}</p>
               <p>{context.state.data.home.p2}</p>
-              <button>{context.state.data.home.button}</button>
-              <pre>
-                <code>
-                  "name": "Nobuo Uematsu", "occupation": "Video game composer",
-                  "available_for_hire:" true
-                </code>
-              </pre>
+              <button className="btn btn--cv">
+                {context.state.data.home.button}
+              </button>
             </div>
+          </div>
+          <div className="container">
+            <code className="status">
+              <p>{"{"}</p>
+              <p className="indent">"name": Elijah Lee,</p>
+              <p className="indent">"occupation": frontend developer,</p>
+              <p className="indent">"for_hire": true</p>
+              <p>{"}"}</p>
+            </code>
           </div>
         </main>
       )}

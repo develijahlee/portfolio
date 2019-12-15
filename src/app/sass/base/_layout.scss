@@ -7,6 +7,7 @@ body {
   margin: 0 auto;
   max-width: calc(18rem + 5vw);
   font-size: 1.25rem;
+  color: #ddd;
   @include xs {
     max-width: calc(23rem + 5vw);
   }
@@ -24,5 +25,15 @@ body {
   }
   &__hero {
     padding: 1.5em 0;
+  }
+}
+
+.btn {
+  padding: .5em 1em;
+  border: none;
+  border-radius: 5px;
+  &--cv {
+    background: #391E2E;
+    color: #fff;
   }
 }

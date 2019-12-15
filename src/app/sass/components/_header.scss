@@ -9,11 +9,11 @@
     align-items: center;
   }
   a {
-    color: #fff;
+    color: #ddd;
     &:hover,
     &:focus,
     &:active {
-      color: #fff;
+      color: #ddd;
       text-decoration: none;
     }
   }
@@ -85,7 +85,7 @@
   max-height: 16em;
 }
 
-.btn {
+.kebab {
   width: 4em;
   //margin-right: .5em;
   background: transparent;
@@ -98,7 +98,7 @@
   }
 }
 
-.btn-active {
+.kebab-active {
   transform: rotate(90deg);
 }
 

@@ -12,13 +12,13 @@ class Header extends Component {
     // Open/closes navigation
     const toggleNav = () => {
       document.getElementById("jsNav").classList.toggle("jsNav-active");
-      document.getElementById("kebab").classList.toggle("btn-active");
+      document.getElementById("kebab").classList.toggle("kebab-active");
     };
 
     // Prevents navigation from opening when logo is clicked
     const closeNav = () => {
       document.getElementById("jsNav").classList.remove("jsNav-active");
-      document.getElementById("kebab").classList.remove("btn-active");
+      document.getElementById("kebab").classList.remove("kebab-active");
     };
 
     return (
@@ -52,7 +52,7 @@ class Header extends Component {
               id="kebab"
               type="button"
               aria-label="Toggle navigation"
-              className="btn"
+              className="kebab"
               onClick={toggleNav}
             >
               <Kebab />
