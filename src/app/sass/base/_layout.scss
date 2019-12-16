@@ -16,6 +16,7 @@ body {
   }
   @include md {
     max-width: calc(36rem + 5vw);
+    font-size: 1rem;
   }
   @include lg {
     max-width: calc(39rem + 5vw);
@@ -23,8 +24,12 @@ body {
   @include xl {
     max-width: calc(41rem + 5vw);
   }
-  &__hero {
-    padding: 1.5em 0;
+}
+
+.intro {
+  padding: 1.5em 0;
+  @include md {
+    max-width: calc(36rem + 5vw);
   }
 }
 

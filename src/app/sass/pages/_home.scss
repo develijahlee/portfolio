@@ -1,9 +1,32 @@
+.container--home {
+  @include md {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.intro--home {
+  @include md {
+    margin-right: 1em;
+    flex-basis: 25em;
+  }
+}
+
+.code {
+  @include md {
+    flex-basis: 30em;
+  }
+}
+
 .status {
   display: block;
   padding: 2em;
   background: #0d0d0d;
   border-radius: 5px;
   line-height: 1.2;
+  @include md {
+    padding: 1em;
+  }
 }
 
 .indent {

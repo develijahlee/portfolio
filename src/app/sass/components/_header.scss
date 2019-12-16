@@ -5,7 +5,7 @@
   background: #663552;
   @include md {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
   }
   a {
