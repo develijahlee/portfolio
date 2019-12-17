@@ -1,4 +1,5 @@
 .container--home {
+  padding-bottom: 4em;
   @include md {
     display: flex;
     align-items: center;
@@ -25,10 +26,44 @@
   border-radius: 5px;
   line-height: 1.2;
   @include md {
-    padding: 1em;
+    padding: 1.5em;
   }
 }
 
 .indent {
   padding-left: 1em;
+}
+
+.projects {
+  ul {
+    list-style: none;
+    > li {
+      position: relative;
+      overflow: hidden;
+      > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 400px;
+        > img {
+          display: block;
+          max-width: 50%;
+          transition: max-width 0.3s ease-in-out;
+        }
+        &:hover {
+          > img {
+            max-width: 40%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.yonsei {
+  background:#2A4398;
+}
+
+.scribe {
+  background: #12114E;
 }

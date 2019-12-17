@@ -8,7 +8,8 @@
     justify-content: space-around;
     align-items: center;
   }
-  a {
+  a,
+  a:visited {
     color: #ddd;
     &:hover,
     &:focus,
@@ -42,6 +43,15 @@
   }
 }
 
+.languages {
+  a {
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid #ddd;
+    }
+  }
+}
+
 .nav__cabinet {
   background: #1a1a1a;
   max-height: 0;
@@ -65,7 +75,8 @@
       display: block;
       padding: .75em;
       font-size: 1.25rem;
-      &:hover{
+      &:hover,
+      &:focus {
         @include md {
           background: #221123;
         }

@@ -41,4 +41,8 @@ body {
     background: #391E2E;
     color: #fff;
   }
+  &:hover,
+  &:focus {
+    background: #221123;
+  }
 }
