@@ -35,24 +35,26 @@ const Home = () => {
             </div>
           </section>
           <section className="projects">
-            <ul>
+            <ul className="projects__list">
               <li>
                 <a
                   className="yonsei"
-                  href="develijahlee.github.io/uic"
+                  href="https://develijahlee.github.io/uic/"
                   target="_blank"
                 >
                   <img src={yonsei} alt="Yonsei University Logo" />
                 </a>
+                <h3>Underwood International College</h3>
               </li>
               <li>
                 <a
                   className="scribe"
-                  href="yonseiuicscribe.com"
+                  href="https://yonseiuicscribe.com"
                   target="_blank"
                 >
                   <img src={scribe} alt="UIC Scribe Logo" />
                 </a>
+                <h3>UIC Scribe</h3>
               </li>
             </ul>
           </section>
