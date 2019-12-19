@@ -5,10 +5,15 @@
     "testimonials": "Testimonials"
   },
   "home": {
-    "h1": "Elijah Lee",
+    "name": "Elijah Lee",
     "p1": "is a frontend developer who creates high quality websites with exceptional user experience.",
     "p2": "He has professional working proficiency in English and Korean and is well-equipped to work in a multicultural environment.",
-    "button": "View CV"
+    "cv": "View CV",
+    "contact": "Contact",
+    "form_name": "Name",
+    "form_email": "Email Address",
+    "form_message": "Message",
+    "form_button": "Send"
   },
   "about": {
     "h1": "Hello, my name is Elijah Lee.",

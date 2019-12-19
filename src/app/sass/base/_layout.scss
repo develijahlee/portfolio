@@ -24,12 +24,34 @@ body {
   @include xl {
     max-width: calc(41rem + 5vw);
   }
+  &--home {
+    padding-bottom: 4em;
+    @include md {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &--contact {
+    padding: 4em 0;
+    background: #E3E3E3;
+    color: #000;
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
 }
 
 .intro {
   padding: 1.5em 0;
   @include md {
     max-width: calc(36rem + 5vw);
+  }
+  &--home {
+    @include md {
+      margin-right: 1em;
+      flex-basis: 25em;
+    }
   }
 }
 
@@ -40,9 +62,123 @@ body {
   &--cv {
     background: #391E2E;
     color: #fff;
+    &:hover,
+    &:focus {
+      background: #221123;
+    }
   }
-  &:hover,
-  &:focus {
-    background: #221123;
+  &--form {
+    background: #C4C4C4;
+    &:hover,
+    &:focus {
+      background: #898989;
+    }
   }
+}
+
+// Home.js Intro 
+
+.code {
+  @include md {
+    flex-basis: 30em;
+  }
+}
+
+.status {
+  display: block;
+  padding: 2em;
+  background: #0d0d0d;
+  border-radius: 5px;
+  line-height: 1.2;
+  @include md {
+    padding: 1.5em;
+  }
+}
+
+.indent {
+  padding-left: 1em;
+}
+
+// Home.js Projects
+
+.projects {
+  ul {
+    list-style: none;
+    > li {
+      position: relative;
+      overflow: hidden;
+      > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 400px;
+        @include lg {
+          min-height: 500px;
+        }
+        @include xl {
+          min-height: 600px;
+        }
+        > img {
+          display: block;
+          width: 225px;
+          transition: width 0.3s ease-in-out;
+          @include md {
+            width: 300px;
+          }
+        }
+      }
+      > h3 {
+        position: absolute;
+        padding: 1em;
+        width: 100%;
+        background:#0d0d0d;
+        color: #ddd;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+      }
+      &:hover {
+        img {
+          width: 175px;
+          @include md {
+            width: 250px;
+          }
+        }
+        > h3 {
+          margin-bottom: 0;
+          transform: translateY(-100%);
+        }
+      }
+    }
+  }
+  &__list {
+    @include md {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+.yonsei {
+  background:#2A4398;
+}
+
+.scribe {
+  background: #12114E;
+}
+
+// Home.js Contact
+
+.contact {
+  background: #E3E3E3;
+}
+
+[type=email], [type=text], textarea {
+  width: 100%;
+  display: block;
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 6px rgba(102,119,136,.03), 0 1px 1px rgba(102,119,136,.4);
 }
