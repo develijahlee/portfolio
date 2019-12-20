@@ -22,5 +22,9 @@
   "testimonials": {
     "h1": "Here are the most recent examples of my work.",
     "h2": "If you want to see more of my work please check my email or social media."
+  },
+  "footer": {
+    "about": "Elijah Lee lives in Seoul, South Korea. He enjoys watching anime, following esports, and writing in his free time. He plans on exploring chatbot, VR, and game development in the future.",
+    "connect": "Connect with me"
   }
 }

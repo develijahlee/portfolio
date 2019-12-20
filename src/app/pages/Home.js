@@ -44,6 +44,7 @@ const Home = () => {
                     className="yonsei"
                     href="https://develijahlee.github.io/uic/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img src={yonsei} alt="Yonsei University Logo" />
                   </a>
@@ -54,6 +55,7 @@ const Home = () => {
                     className="scribe"
                     href="https://yonseiuicscribe.com"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img src={scribe} alt="UIC Scribe Logo" />
                   </a>

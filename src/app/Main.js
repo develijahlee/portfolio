@@ -14,6 +14,7 @@ import About from "./pages/About";
 
 // Import components
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 // Component Implementation
 const Main = () => {
@@ -25,6 +26,7 @@ const Main = () => {
           <Route exact={true} path="/" component={Home} />
           <Route exact={true} path="/testimonials" component={Testimonials} />
           <Route exact={true} path="/about" component={About} />
+          <Footer context={context} />
         </React.Fragment>
       )}
     </MyContext.Consumer>
