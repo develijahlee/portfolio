@@ -16,8 +16,8 @@
     "form_button": "Send"
   },
   "about": {
-    "h1": "Hello, my name is Elijah Lee.",
-    "p": "I'm a frontend developer from Korea. I am specialized on JavaScript stack."
+    "h1": "About Elijah",
+    "p": "Always learning something new"
   },
   "testimonials": {
     "h1": "Here are the most recent examples of my work.",

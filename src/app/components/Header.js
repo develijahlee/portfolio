@@ -30,20 +30,12 @@ class Header extends Component {
             </Link>
             <ul className="languages">
               <li>
-                <Link
-                  onClick={context.changeLanguage}
-                  data-language="en"
-                  to="/#"
-                >
+                <Link onClick={context.changeLanguage} data-language="en">
                   ENG
                 </Link>
               </li>
               <li>
-                <Link
-                  onClick={context.changeLanguage}
-                  data-language="kr"
-                  to="/#"
-                >
+                <Link onClick={context.changeLanguage} data-language="kr">
                   한국어
                 </Link>
               </li>

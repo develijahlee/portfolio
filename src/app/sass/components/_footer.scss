@@ -5,9 +5,10 @@ footer {
   background: #000;
 }
 
-.social-icons {
+.social {
   margin-top: 1em;
-  img {
+  a {
+    display: inline-block;
     margin-right: 1em;
   }
 }

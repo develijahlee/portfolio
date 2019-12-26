@@ -19,7 +19,7 @@ class Footer extends Component {
           </div>
           <div className="connect">
             <p>{context.state.data.footer.connect}</p>
-            <div className="social-icons">
+            <div className="social">
               <a
                 href="https://github.com/develijahlee/"
                 target="blank"

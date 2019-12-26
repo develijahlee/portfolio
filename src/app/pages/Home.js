@@ -67,12 +67,16 @@ const Home = () => {
           <section className="contact">
             <div className="container container--contact">
               <h1>{context.state.data.home.contact}</h1>
-              <form action="https://formspree.io/you@email.com">
-                <label for="name">{context.state.data.home.form_name}</label>
+              <form action="https://formspree.io/xnqjpzzz" method="POST">
+                <label htmlFor="name">
+                  {context.state.data.home.form_name}
+                </label>
                 <input type="text" name="name" />
-                <label for="email">{context.state.data.home.form_email}</label>
+                <label htmlFor="email">
+                  {context.state.data.home.form_email}
+                </label>
                 <input type="email" name="_replyto" />
-                <label for="message">
+                <label htmlFor="message">
                   {context.state.data.home.form_message}
                 </label>
                 <textarea name="message" cols="30" rows="10" />

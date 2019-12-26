@@ -31,6 +31,10 @@ body {
       align-items: center;
     }
   }
+  &--about {
+    padding: 1.5em 0;
+    text-align: center;
+  }
   &--contact {
     padding: 4em 0;
     background: #E3E3E3;
@@ -181,4 +185,14 @@ body {
   font-size: 1.1rem;
   margin-bottom: 1rem;
   box-shadow: 0 3px 6px rgba(102,119,136,.03), 0 1px 1px rgba(102,119,136,.4);
+}
+
+// About.js History
+
+.history {
+  background: #e3e3e3;
+  p {
+    color: #000;
+    text-align: initial;
+  }
 }
