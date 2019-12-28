@@ -17,14 +17,16 @@
   },
   "about": {
     "h1": "About Elijah",
-    "p": "Always learning something new"
+    "p": "Creating exceptional products using the best tools available",
+    "methodology": "I integrate code and design to create responsive websites that make the most of the least space. Cross browser compatibility is ensured by displaying core features on older browers while newer browsers display enhanced features that enrich the user experience. I follow best practices and use semantic markup to ensure web content does not impede search engine crawlers or screen readers.",
+    "tools": "My build tools include Sass, Git, Github, and NPM. I use Figma for design mockups."
   },
   "testimonials": {
     "h1": "Here are the most recent examples of my work.",
     "h2": "If you want to see more of my work please check my email or social media."
   },
   "footer": {
-    "about": "Elijah Lee lives in Seoul, South Korea. He enjoys watching anime, following esports, and writing in his free time. He plans on exploring chatbot, VR, and game development in the future.",
+    "about": "Elijah Lee lives in Seoul, South Korea. He has an undergraduate degree in Economics from Yonsei University. His interests include artificial intelligence, virtual/augmented reality, and studying video game economies.",
     "connect": "Connect with me"
   }
 }
