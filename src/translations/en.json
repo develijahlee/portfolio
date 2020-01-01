@@ -19,7 +19,8 @@
     "h1": "About Elijah",
     "p": "Creating exceptional products using the best tools available",
     "methodology": "I integrate code and design to create responsive websites that make the most of the least space. Cross browser compatibility is ensured by displaying core features on older browers while newer browsers display enhanced features that enrich the user experience. I follow best practices and use semantic markup to ensure web content does not impede search engine crawlers or screen readers.",
-    "tools": "My build tools include Sass, Git, Github, and NPM. I use Figma for design mockups."
+    "tools": "My build tools include Sass, Git, Github, and NPM. I use Figma for design mockups.",
+    "h2": "Skills"
   },
   "testimonials": {
     "h1": "Here are the most recent examples of my work.",

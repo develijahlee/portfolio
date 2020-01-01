@@ -6,8 +6,8 @@ import React from "react";
 import { MyContext } from "../../context";
 
 // Import images
-import yonsei from "../img/yonsei-logo.png";
-import scribe from "../img/scribe-logo.png";
+import yonsei from "../img/portfolio/yonsei-logo.png";
+import scribe from "../img/portfolio/scribe-logo.png";
 
 const Home = () => {
   return (

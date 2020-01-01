@@ -3,9 +3,9 @@
 import React, { Component } from "react";
 
 // Import images
-import github from "../img/github.png";
-import stackoverflow from "../img/stack-overflow.png";
-import linkedin from "../img/linkedin.png";
+import github from "../img/social/github.png";
+import stackoverflow from "../img/social/stack-overflow.png";
+import linkedin from "../img/social/linkedin.png";
 
 class Footer extends Component {
   render() {
