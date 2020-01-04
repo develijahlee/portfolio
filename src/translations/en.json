@@ -23,11 +23,11 @@
     "h2": "Skills"
   },
   "testimonials": {
-    "h1": "Here are the most recent examples of my work.",
-    "h2": "If you want to see more of my work please check my email or social media."
+    "h1": "Testimonials",
+    "p": "Working with me"
   },
   "footer": {
-    "about": "Elijah Lee lives in Seoul, South Korea. He has an undergraduate degree in Economics from Yonsei University. His interests include artificial intelligence, virtual/augmented reality, and studying video game economies.",
+    "about": "Elijah Lee lives in Seoul, South Korea. He has an undergraduate degree in Economics from Yonsei University. His interests include artificial intelligence, virtual/augmented reality, and studying virtual economies.",
     "connect": "Connect with me"
   }
 }
