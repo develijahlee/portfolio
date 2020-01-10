@@ -15,8 +15,8 @@ const Home = () => {
       {context => (
         <main>
           <section>
-            <div className="container container--home">
-              <div className="intro intro--home">
+            <div className="container container--intro">
+              <div className="intro">
                 <h1>{context.state.data.home.name}</h1>
 
                 <p>{context.state.data.home.p1}</p>
@@ -64,7 +64,7 @@ const Home = () => {
               </ul>
             </div>
           </section>
-          <section className="contact">
+          <section className="contact-form">
             <div className="container container--contact">
               <h1>{context.state.data.home.contact}</h1>
               <form action="https://formspree.io/xnqjpzzz" method="POST">

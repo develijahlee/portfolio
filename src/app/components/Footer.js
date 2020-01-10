@@ -14,10 +14,10 @@ class Footer extends Component {
     return (
       <footer>
         <div className="container">
-          <div className="about">
+          <div>
             <p>{context.state.data.footer.about}</p>
           </div>
-          <div className="connect">
+          <div>
             <p>{context.state.data.footer.connect}</p>
             <div className="social">
               <a

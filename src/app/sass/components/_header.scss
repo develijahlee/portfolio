@@ -20,6 +20,8 @@
   }
 }
 
+// Unexpanded mobile navigation
+
 .nav__bar {
   display: flex;
   justify-content: space-between;
@@ -43,14 +45,7 @@
   }
 }
 
-.languages {
-  a {
-    &:hover,
-    &:focus {
-      border-bottom: 1px solid #ddd;
-    }
-  }
-}
+// Expanded mobile navigation
 
 .nav__cabinet {
   background: #1a1a1a;
@@ -96,9 +91,11 @@
   max-height: 16em;
 }
 
+
+// Mobile menu icon
+
 .kebab {
   width: 4em;
-  //margin-right: .5em;
   background: transparent;
   border: none;
   > svg {
@@ -113,6 +110,7 @@
   transform: rotate(90deg);
 }
 
+// Language options
 .languages {
   display: flex;
   list-style-type: none;
@@ -121,6 +119,10 @@
     > a {
       @include md {
         font-size: .75em;
+      }
+      &:hover,
+      &:focus {
+        border-bottom: 1px solid #ddd;
       }
     }
   }

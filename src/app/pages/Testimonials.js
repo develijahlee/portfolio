@@ -19,8 +19,8 @@ const Testimonials = () => {
               <p>{context.state.data.testimonials.p}</p>
             </div>
           </section>
-          <section className="testimonial-quotes">
-            <div className="container quotes">
+          <section className="cards">
+            <div className="container">
               <blockquote>
                 <img src={quote} alt="HTML5 logo" />
                 <p>

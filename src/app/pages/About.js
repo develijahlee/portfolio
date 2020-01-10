@@ -24,13 +24,13 @@ const About = () => {
               <p>{context.state.data.about.p}</p>
             </div>
           </section>
-          <section className="history">
+          <section className="workflow">
             <div className="container container--about">
               <p>{context.state.data.about.methodology}</p>
               <p>{context.state.data.about.tools}</p>
             </div>
           </section>
-          <section className="skills">
+          <section className="tech">
             <h2>{context.state.data.about.h2}</h2>
             <div className="container container--skills">
               <figure>

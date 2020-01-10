@@ -1,6 +1,14 @@
 /* src/app/sass/base/layout.scss */
+
+// Base styles
 body {
   background: #663552;
+}
+
+.btn {
+  padding: .5em 1em;
+  border: none;
+  border-radius: 5px;
 }
 
 .container {
@@ -24,75 +32,37 @@ body {
   @include xl {
     max-width: calc(41rem + 5vw);
   }
-  &--home {
-    padding-bottom: 4em;
-    @include md {
-      display: flex;
-      align-items: center;
-    }
-  }
-  &--about {
-    padding: 1.5em 0;
-    text-align: center;
-  }
-  &--contact {
-    padding: 2em 0;
-    background: #E3E3E3;
-    color: #000;
-    h1 {
-      font-size: 2rem;
-      text-align: center;
-    }
-  }
-  &--skills {
-    padding: 1.5em 0;
-    @include md {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 1em;
-    }
-  }
-  &--testimonials {
-    padding: 1.5em 0;
-    text-align: center;
+}
+
+// Home.js Intro 
+
+.container--intro {
+  padding-bottom: 4em;
+  @include md {
+    display: flex;
+    align-items: center;
   }
 }
 
 .intro {
   padding: 1.5em 0;
   @include md {
+    margin-right: 1em;
+    flex-basis: 25em;
     max-width: calc(36rem + 5vw);
   }
-  &--home {
-    @include md {
-      margin-right: 1em;
-      flex-basis: 25em;
-    }
+}
+
+.btn--cv {
+  background: #391E2E;
+  color: #fff;
+  &:hover,
+  &:focus {
+    background: #221123;
   }
 }
 
-.btn {
-  padding: .5em 1em;
-  border: none;
-  border-radius: 5px;
-  &--cv {
-    background: #391E2E;
-    color: #fff;
-    &:hover,
-    &:focus {
-      background: #221123;
-    }
-  }
-  &--form {
-    background: #C4C4C4;
-    &:hover,
-    &:focus {
-      background: #898989;
-    }
-  }
-}
-
-// Home.js Intro 
+// Home.js Code
 
 .code {
   @include md {
@@ -184,8 +154,18 @@ body {
 
 // Home.js Contact
 
-.contact {
+.contact-form {
   background: #E3E3E3;
+}
+
+.container--contact {
+  padding: 2em 0;
+  background: #E3E3E3;
+  color: #000;
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 
 [type=email], [type=text], textarea {
@@ -199,9 +179,24 @@ body {
   box-shadow: 0 3px 6px rgba(102,119,136,.03), 0 1px 1px rgba(102,119,136,.4);
 }
 
-// About.js History
+.btn--form {
+  background: #C4C4C4;
+  &:hover,
+  &:focus {
+    background: #898989;
+  }
+}
 
-.history {
+// About.js Container
+
+.container--about {
+  padding: 1.5em 0;
+  text-align: center;
+}
+
+// About.js Workflow
+
+.workflow {
   background: #e3e3e3;
   p {
     color: #000;
@@ -211,7 +206,7 @@ body {
 
 // About.js Skills
 
-.skills {
+.tech {
   padding: 2em 0;
   background: #C4C4C4;
   h2 {
@@ -236,9 +231,38 @@ body {
   }
 }
 
+.container--skills {
+  padding: 1.5em 0;
+  @include md {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+  }
+}
+
+// Testimonials.js Container 
+.container--testimonials {
+  padding: 1.5em 0;
+  text-align: center;
+}
+
 // Testimonials.js Quotes
-.testimonial-quotes {
+.cards {
   background: #e3e3e3;
+  > div {
+    padding: 2em 0;
+    blockquote {
+      background: #fff;
+      padding: 2em;
+      border-radius: 5px;
+      box-shadow: 0 6px 8px rgba(102, 119, 136, 0.03), 0 1px 2px rgba(102, 119, 136, 0.3);
+      img {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 1em;
+      }
+    }
+  }
   p {
     color: #000;
   }
@@ -246,21 +270,6 @@ body {
 
 .signature {
   text-align: right;
-}
-
-.quotes {
-  padding: 2em 0;
-  blockquote {
-    background: #fff;
-    padding: 2em;
-    border-radius: 5px;
-    box-shadow: 0 6px 8px rgba(102, 119, 136, 0.03), 0 1px 2px rgba(102, 119, 136, 0.3);
-    img {
-      display: block;
-      margin: 0 auto;
-      padding-bottom: 1em;
-    }
-  }
 }
 
 .name {
