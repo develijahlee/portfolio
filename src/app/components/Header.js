@@ -25,17 +25,25 @@ class Header extends Component {
       <header>
         <nav className="nav">
           <div className="nav__bar">
-            <Link to="/" onClick={closeNav}>
+            <Link to="/" onClick={closeNav} aria-label="Return to homepage">
               <Logo />
             </Link>
             <ul className="languages">
               <li>
-                <Link onClick={context.changeLanguage} data-language="en">
+                <Link
+                  onClick={context.changeLanguage}
+                  data-language="en"
+                  aria-label="Change language to English"
+                >
                   ENG
                 </Link>
               </li>
               <li>
-                <Link onClick={context.changeLanguage} data-language="kr">
+                <Link
+                  onClick={context.changeLanguage}
+                  data-language="kr"
+                  aria-label="Change language to Korean"
+                >
                   한국어
                 </Link>
               </li>

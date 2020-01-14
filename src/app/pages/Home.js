@@ -71,15 +71,20 @@ const Home = () => {
                 <label htmlFor="name">
                   {context.state.data.home.form_name}
                 </label>
-                <input type="text" name="name" />
+                <input type="text" name="name" aria-label="Enter name" />
                 <label htmlFor="email">
                   {context.state.data.home.form_email}
                 </label>
-                <input type="email" name="_replyto" />
+                <input type="email" name="_replyto" aria-label="Enter email" />
                 <label htmlFor="message">
                   {context.state.data.home.form_message}
                 </label>
-                <textarea name="message" cols="30" rows="10" />
+                <textarea
+                  name="message"
+                  cols="30"
+                  rows="10"
+                  aria-label="Enter message"
+                />
                 <input
                   type="submit"
                   value={context.state.data.home.form_button}
