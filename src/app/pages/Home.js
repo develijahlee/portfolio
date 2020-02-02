@@ -8,6 +8,10 @@ import { MyContext } from "../../context";
 // Import images
 import yonsei from "../img/portfolio/yonsei-logo.png";
 import scribe from "../img/portfolio/scribe-logo.png";
+import arrow from "../img/portfolio/portfolio-arrow.png";
+
+// Import hashlink
+import { HashLink as Link } from "react-router-hash-link";
 
 const Home = () => {
   return (
@@ -21,9 +25,9 @@ const Home = () => {
 
                 <p>{context.state.data.home.p1}</p>
                 <p>{context.state.data.home.p2}</p>
-                <button className="btn btn--cv">
+                <a href="../cv/EliyaLee_CV.pdf" className="btn btn--cv">
                   {context.state.data.home.cv}
-                </button>
+                </a>
               </div>
               <div className="code">
                 <code className="status">
@@ -35,8 +39,14 @@ const Home = () => {
                 </code>
               </div>
             </div>
+            <div className="container">
+              <Link className="portfolio-arrow" smooth to="/#portfolio">
+                {context.state.data.home.portfolio}
+                <img src={arrow} alt="portfolio arrow" />
+              </Link>
+            </div>
           </section>
-          <section>
+          <section id="portfolio">
             <div className="projects">
               <ul className="projects__list">
                 <li>

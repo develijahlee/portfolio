@@ -9,6 +9,7 @@
     "p1": "is a frontend developer who creates high quality websites with exceptional user experience.",
     "p2": "He has professional working proficiency in English and Korean and is well-equipped to work in a multicultural environment.",
     "cv": "View CV",
+    "portfolio": "View Portfolio",
     "contact": "Contact",
     "form_name": "Name",
     "form_email": "Email Address",
@@ -24,10 +25,18 @@
   },
   "testimonials": {
     "h1": "Testimonials",
-    "p": "Working with me"
+    "p": "Working with me",
+    "t1p1": "Elijah is agile in picking up and recognizing people's discomfort as problems. He solves them with his sharp insights and coding skills. What's even more amazing about observing his projects is that Elijah does all of this naturally and elegantly. It is undoubtedly clear that I will leave my website design to him next time",
+    "t1name": "Seung Yong Yoo",
+    "t1workplace": "Yonsei University",
+    "t2p1": "I’ve worked with Elijah on a number of projects and one thing that was always apparent with his work is Elijah’s drive and forward thinking. Elijah is not one to settle for anything mediocre and is always motivated to further improve his work. His work in website development is of course no exception.",
+    "t2p2": "Elijah had seen that our school’s student publication website had areas of improvement. Thus he took it upon himself to singlehandedly make a new website from scratch to replace the current one. Interestingly enough, we had no idea if his new website would even be allowed to replace the current one, but his passion and hard work had shown through as the school welcomed the change.",
+    "t2p3": "Such an example shows Elijah’s initiative and skills to back up that initiative. Even now, he constantly strives for even further excellence on all of his projects. If you’re looking for someone who takes ownership over their work and is adaptable enough to make the right changes, I’d say Elijah is the one you’re looking for.",
+    "t2name": "Jin Lee",
+    "t2workplace": "Transperfect"
   },
   "footer": {
-    "about": "Elijah Lee lives in Seoul, South Korea. He has an undergraduate degree in Economics from Yonsei University. His interests include artificial intelligence, virtual/augmented reality, and studying virtual economies.",
+    "about": "Elijah Lee lives in Incheon, South Korea. He has an undergraduate degree in Economics from Yonsei University. His interests include artificial intelligence, virtual/augmented reality, and studying virtual economies.",
     "connect": "Connect with me"
   }
 }

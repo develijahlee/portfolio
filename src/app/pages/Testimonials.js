@@ -22,45 +22,34 @@ const Testimonials = () => {
           <section className="cards">
             <div className="container">
               <blockquote>
-                <img src={quote} alt="HTML5 logo" />
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse tristique eros tortor, nec elementum magna mollis
-                  vel. Nunc quis lorem ornare velit luctus volutpat. Nunc
-                  scelerisque magna metus.
-                </p>
-                <p>
-                  Donec at luctus ante, id eleifend neque. Nulla sit amet
-                  aliquet felis, et cursus nisl. Aliquam fringilla enim non
-                  ligula lacinia volutpat. Aliquam commodo cursus ullamcorper.
-                  Mauris et varius erat.
-                </p>
+                <img src={quote} alt="quotation marks" />
+                <p>{context.state.data.testimonials.t1p1}</p>
                 <p className="signature">
-                  <span className="name">Andy Lee</span>
-                  <span className="workplace">Yonsei University</span>
+                  <span className="name">
+                    {context.state.data.testimonials.t1name}
+                  </span>
+                  <span className="workplace">
+                    {context.state.data.testimonials.t1workplace}
+                  </span>
                 </p>
               </blockquote>
               <blockquote>
-                <img src={quote} alt="HTML5 logo" />
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse tristique eros tortor, nec elementum magna mollis
-                  vel. Nunc quis lorem ornare velit luctus volutpat. Nunc
-                  scelerisque magna metus.
-                </p>
-                <p>
-                  Donec at luctus ante, id eleifend neque. Nulla sit amet
-                  aliquet felis, et cursus nisl. Aliquam fringilla enim non
-                  ligula lacinia volutpat. Aliquam commodo cursus ullamcorper.
-                  Mauris et varius erat.
-                </p>
+                <img src={quote} alt="quotation marks" />
+                <p>{context.state.data.testimonials.t2p1}</p>
+                <p>{context.state.data.testimonials.t2p2}</p>
+                <p>{context.state.data.testimonials.t2p3}</p>
                 <p className="signature">
-                  <span className="name">Andy Lee</span>
-                  <span className="workplace">Yonsei University</span>
+                  <span className="name">
+                    {context.state.data.testimonials.t2name}
+                  </span>
+                  <span className="workplace">
+                    {context.state.data.testimonials.t2workplace}
+                  </span>
                 </p>
               </blockquote>
+              {/*
               <blockquote>
-                <img src={quote} alt="HTML5 logo" />
+                <img src={quote} alt="quotation marks" />
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Suspendisse tristique eros tortor, nec elementum magna mollis
@@ -78,6 +67,7 @@ const Testimonials = () => {
                   <span className="workplace">Yonsei University</span>
                 </p>
               </blockquote>
+              */}
             </div>
           </section>
         </main>
