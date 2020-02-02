@@ -25,7 +25,10 @@ const Home = () => {
 
                 <p>{context.state.data.home.p1}</p>
                 <p>{context.state.data.home.p2}</p>
-                <a href="../cv/EliyaLee_CV.pdf" className="btn btn--cv">
+                <a
+                  href={context.state.data.home.cv_elijah}
+                  className="btn btn--cv"
+                >
                   {context.state.data.home.cv}
                 </a>
               </div>
