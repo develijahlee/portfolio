@@ -87,6 +87,7 @@ body {
 }
 
 // Home.js Portfolio Arrow
+
 .portfolio-arrow {
   display: flex;
   flex-flow: column;
@@ -117,11 +118,14 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 400px; // for IE
         min-height: 400px;
         @include lg {
+          height: 500px; // for IE
           min-height: 500px;
         }
         @include xl {
+          height: 600px; // for IE
           min-height: 600px;
         }
         > img {
@@ -158,8 +162,17 @@ body {
   }
   &__list {
     @include md {
+      display: -ms-grid;
+      -ms-grid-columns: 1fr 1fr;
       display: grid;
       grid-template-columns: 1fr 1fr;
+    }
+    > li {
+      @include md {
+        &:nth-child(2) {
+          -ms-grid-column: 2; 
+        }
+      }
     }
   }
 }
@@ -241,6 +254,10 @@ body {
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 6px 8px rgba(102,119,136,.03), 0 1px 2px rgba(102,119,136,.3);
+    margin: 1rem 1rem; // for IE
+    @supports (display: grid) {
+      margin: 0 0 1rem;
+    }
     img {
       display: block;
     }
@@ -254,9 +271,36 @@ body {
 .container--skills {
   padding: 1.5em 0;
   @include md {
+    display:-ms-grid;
+    -ms-grid-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1em;
+  }
+  > figure {
+    @include md {
+      &:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2; 
+      }
+      &:nth-child(3) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1; 
+      } 
+      &:nth-child(4) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2; 
+      }
+      &:nth-child(5) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1; 
+      }
+      &:nth-child(6) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2; 
+      }
+    }
   }
 }
 
