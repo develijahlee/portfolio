@@ -92,7 +92,8 @@ body {
   display: flex;
   flex-flow: column;
   align-items: center;
-  margin: 2em 0;
+  margin: 2em auto;
+  width: 10em;
   color: #fff;
   &:hover,
   &:focus,
