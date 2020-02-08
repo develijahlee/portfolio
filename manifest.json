@@ -16,6 +16,6 @@
     "start_url": "./index.html",
     "background_color": "#663552",
     "display": "standalone",
-    "scope": "/maps/",
+    "scope": "./",
     "theme_color": "#663552"
   }
