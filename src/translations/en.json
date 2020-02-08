@@ -20,14 +20,14 @@
   "about": {
     "h1": "About Elijah",
     "p": "Creating exceptional products using the best tools available",
-    "methodology": "I integrate code and design to create responsive websites that make the most of the least space. Cross browser compatibility is ensured by displaying core features on older browsers while newer browsers display enhanced features that enrich the user experience. I follow best practices and use semantic markup to ensure web content does not impede search engine crawlers or screen readers.",
-    "tools": "My build tools include Sass, Git, Github, and NPM. I use Figma for design mockups and use NVDA to test for accessibility.",
+    "methodology": "I integrate code and design to create responsive websites that make the most of the least space. Cross browser compatibility is ensured by displaying core features on older browsers while newer browsers display enhanced features that enrich the user experience. I follow best practices and use semantic markup to ensure web content does not impede search engine crawlers or screen readers. I enable websites to be installable on mobile devices via progressive web applications to engage users even when they are without internet access.",
+    "tools": "My build tools include Sass, Git, Github, and NPM. I use Figma for design mockups, NVDA/VoiceOver to test for accessibility, and Google Lighthouse to test for performance.",
     "h2": "Skills"
   },
   "testimonials": {
     "h1": "Testimonials",
     "p": "Working with me",
-    "t1p1": "Elijah is agile in picking up and recognizing people's discomfort as problems. He solves them with his sharp insights and coding skills. What's even more amazing about observing his projects is that Elijah does all of this naturally and elegantly. It is undoubtedly clear that I will leave my website design to him next time",
+    "t1p1" : "Elijah is agile in picking up and recognizing people's discomfort as problems. He solves them with his sharp insights and coding skills. What's even more amazing about observing his projects is that Elijah does all of this naturally and elegantly. It is undoubtedly clear that I will leave my website design to him next time",
     "t1name": "Seung Yong Yoo",
     "t1workplace": "Yonsei University",
     "t2p1": "I’ve worked with Elijah on a number of projects and one thing that was always apparent with his work is Elijah’s drive and forward thinking. Elijah is not one to settle for anything mediocre and is always motivated to further improve his work. His work in website development is of course no exception.",
