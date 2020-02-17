@@ -1,0 +1,348 @@
+/* src/app/sass/base/layout.scss */
+
+// Base styles
+body {
+  background: #663552;
+}
+
+.btn {
+  padding: .5em 1em;
+  border: none;
+  border-radius: 5px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: calc(18rem + 5vw);
+  font-size: 1.25rem;
+  color: #ddd;
+  @include xs {
+    max-width: calc(23rem + 5vw);
+  }
+  @include sm {
+    max-width: calc(31rem + 5vw);
+  }
+  @include md {
+    max-width: calc(36rem + 5vw);
+    font-size: 1rem;
+  }
+  @include lg {
+    max-width: calc(39rem + 5vw);
+  }
+  @include xl {
+    max-width: calc(41rem + 5vw);
+  }
+}
+
+// Home.js Intro 
+
+.container--intro {
+  @include md {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.intro {
+  padding: 1.5em 0;
+  @include md {
+    margin-right: 1em;
+    flex-basis: 25em;
+    max-width: calc(36rem + 5vw);
+  }
+}
+
+.btn--cv {
+  background: #391E2E;
+  color: #fff;
+  &:hover,
+  &:focus {
+    background: #221123;
+    color:#fff;
+    text-decoration: none;
+  }
+}
+
+// Home.js Code
+
+.code {
+  @include md {
+    flex-basis: 30em;
+  }
+}
+
+.status {
+  display: block;
+  padding: 2em;
+  background: #0d0d0d;
+  border-radius: 5px;
+  line-height: 1.2;
+  @include md {
+    padding: 1.5em;
+  }
+}
+
+.indent {
+  padding-left: 1em;
+}
+
+// Home.js Portfolio Arrow
+
+.portfolio-arrow {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 2em auto;
+  width: 10em;
+  color: #fff;
+  &:hover,
+  &:focus,
+  &:active {
+    color: #fff;
+    text-decoration: none;
+  }
+  img {
+    display: block;
+    margin-top: .5em;
+  }
+}
+
+// Home.js Projects
+
+.projects {
+  ul {
+    list-style: none;
+    > li {
+      position: relative;
+      overflow: hidden;
+      > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px; // for IE
+        min-height: 400px;
+        @include lg {
+          height: 500px; // for IE
+          min-height: 500px;
+        }
+        @include xl {
+          height: 600px; // for IE
+          min-height: 600px;
+        }
+        > img {
+          display: block;
+          width: 225px;
+          transition: width 0.3s ease-in-out;
+          @include md {
+            width: 300px;
+          }
+        }
+      }
+      > h3 {
+        position: absolute;
+        padding: 1em;
+        width: 100%;
+        background:#0d0d0d;
+        color: #ddd;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+      }
+      &:hover {
+        img {
+          width: 175px;
+          @include md {
+            width: 250px;
+          }
+        }
+        > h3 {
+          margin-bottom: 0;
+          transform: translateY(-100%);
+        }
+      }
+    }
+  }
+  &__list {
+    @include md {
+      display: -ms-grid;
+      -ms-grid-columns: 1fr 1fr;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    > li {
+      @include md {
+        &:nth-child(2) {
+          -ms-grid-column: 2; 
+        }
+      }
+    }
+  }
+}
+
+.yonsei {
+  background:#2A4398;
+}
+
+.scribe {
+  background: #12114E;
+}
+
+// Home.js Contact
+
+.contact-form {
+  background: #E3E3E3;
+}
+
+.container--contact {
+  padding: 2em 0;
+  background: #E3E3E3;
+  color: #000;
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+[type=email], [type=text], textarea {
+  width: 100%;
+  display: block;
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 6px rgba(102,119,136,.03), 0 1px 1px rgba(102,119,136,.4);
+}
+
+.btn--form {
+  background: #C4C4C4;
+  &:hover,
+  &:focus {
+    background: #898989;
+  }
+}
+
+// About.js Container
+
+.container--about {
+  padding: 1.5em 0;
+  text-align: center;
+}
+
+// About.js Workflow
+
+.workflow {
+  background: #e3e3e3;
+  p {
+    color: #000;
+    text-align: initial;
+  }
+}
+
+// About.js Skills
+
+.tech {
+  padding: 2em 0;
+  background: #C4C4C4;
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  figure {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 1em;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 6px 8px rgba(102,119,136,.03), 0 1px 2px rgba(102,119,136,.3);
+    margin: 1rem 1rem; // for IE
+    @supports (display: grid) {
+      margin: 0 0 1rem;
+    }
+    img {
+      display: block;
+    }
+    figcaption {
+      font-size: 1.5rem;
+      color: #000;
+    }
+  }
+}
+
+.container--skills {
+  padding: 1.5em 0;
+  @include md {
+    display:-ms-grid;
+    -ms-grid-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+  }
+  > figure {
+    @include md {
+      &:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2; 
+      }
+      &:nth-child(3) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1; 
+      } 
+      &:nth-child(4) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2; 
+      }
+      &:nth-child(5) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1; 
+      }
+      &:nth-child(6) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2; 
+      }
+    }
+  }
+}
+
+// Testimonials.js Container 
+.container--testimonials {
+  padding: 1.5em 0;
+  text-align: center;
+}
+
+// Testimonials.js Quotes
+.cards {
+  background: #e3e3e3;
+  > div {
+    padding: 2em 0;
+    blockquote {
+      background: #fff;
+      padding: 2em;
+      border-radius: 5px;
+      box-shadow: 0 6px 8px rgba(102, 119, 136, 0.03), 0 1px 2px rgba(102, 119, 136, 0.3);
+      img {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 1em;
+      }
+    }
+  }
+  p {
+    color: #000;
+  }
+}
+
+.signature {
+  text-align: right;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.workplace {
+  display: block;
+  color: #003879;
+  font-weight: bold;
+}

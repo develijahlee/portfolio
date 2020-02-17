@@ -1,0 +1,14 @@
+/* src/app/sass/base/components/footer.scss */
+
+footer {
+  padding: 2em 0;
+  background: #000;
+}
+
+.social {
+  margin-top: 1em;
+  a {
+    display: inline-block;
+    margin-right: 1em;
+  }
+}
