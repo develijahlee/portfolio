@@ -25,8 +25,17 @@ const Testimonials = () => {
                 <img src={quote} alt="quotation marks" />
                 <p>{context.state.data.testimonials.t1p1}</p>
                 <p className="signature">
+<<<<<<< HEAD
                   <span className="name">{context.state.data.testimonials.t1name}</span>
                   <span className="workplace">{context.state.data.testimonials.t1workplace}</span>
+=======
+                  <span className="name">
+                    {context.state.data.testimonials.t1name}
+                  </span>
+                  <span className="workplace">
+                    {context.state.data.testimonials.t1workplace}
+                  </span>
+>>>>>>> bf686fcb6e918e8e35b42ff103b6d15d6e20e271
                 </p>
               </blockquote>
               <blockquote>
@@ -35,8 +44,17 @@ const Testimonials = () => {
                 <p>{context.state.data.testimonials.t2p2}</p>
                 <p>{context.state.data.testimonials.t2p3}</p>
                 <p className="signature">
+<<<<<<< HEAD
                   <span className="name">{context.state.data.testimonials.t2name}</span>
                   <span className="workplace">{context.state.data.testimonials.t2workplace}</span>
+=======
+                  <span className="name">
+                    {context.state.data.testimonials.t2name}
+                  </span>
+                  <span className="workplace">
+                    {context.state.data.testimonials.t2workplace}
+                  </span>
+>>>>>>> bf686fcb6e918e8e35b42ff103b6d15d6e20e271
                 </p>
               </blockquote>
               {/*
@@ -59,7 +77,11 @@ const Testimonials = () => {
                   <span className="workplace">Yonsei University</span>
                 </p>
               </blockquote>
+<<<<<<< HEAD
               */} 
+=======
+              */}
+>>>>>>> bf686fcb6e918e8e35b42ff103b6d15d6e20e271
             </div>
           </section>
         </main>

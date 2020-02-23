@@ -25,7 +25,11 @@ class Header extends Component {
       <header>
         <nav className="nav">
           <div className="nav__bar">
+<<<<<<< HEAD
             <Link to="/home" onClick={closeNav} aria-label="Return to homepage">
+=======
+            <Link to="/" onClick={closeNav} aria-label="Return to homepage">
+>>>>>>> bf686fcb6e918e8e35b42ff103b6d15d6e20e271
               <Logo />
             </Link>
             <ul className="languages">
@@ -61,7 +65,11 @@ class Header extends Component {
           <div id="jsNav" className="nav__cabinet">
             <ul className="nav-list">
               <li>
+<<<<<<< HEAD
                 <Link to="/home" onClick={toggleNav}>
+=======
+                <Link to="/" onClick={toggleNav}>
+>>>>>>> bf686fcb6e918e8e35b42ff103b6d15d6e20e271
                   {context.state.data.nav.home}
                 </Link>
               </li>
