@@ -25,7 +25,6 @@ const Testimonials = () => {
                 <img src={quote} alt="quotation marks" />
                 <p>{context.state.data.testimonials.t1p1}</p>
                 <p className="signature">
-<<<<<<< HEAD
                   <span className="name">{context.state.data.testimonials.t1name}</span>
                   <span className="workplace">{context.state.data.testimonials.t1workplace}</span>
 =======
