@@ -5,23 +5,14 @@ import React from "react";
 // Import context and provider
 import { MyContext } from "../../context";
 
-<<<<<<< HEAD
 // Import hashlink
 import { HashLink as Link } from "react-router-hash-link";
 
-=======
->>>>>>> bf686fcb6e918e8e35b42ff103b6d15d6e20e271
 // Import images
 import yonsei from "../img/portfolio/yonsei-logo.png";
 import scribe from "../img/portfolio/scribe-logo.png";
 import arrow from "../img/portfolio/portfolio-arrow.png";
 
-<<<<<<< HEAD
-=======
-// Import hashlink
-import { HashLink as Link } from "react-router-hash-link";
-
->>>>>>> bf686fcb6e918e8e35b42ff103b6d15d6e20e271
 const Home = () => {
   return (
     <MyContext.Consumer>
@@ -34,14 +25,7 @@ const Home = () => {
 
                 <p>{context.state.data.home.p1}</p>
                 <p>{context.state.data.home.p2}</p>
-<<<<<<< HEAD
                 <a href={context.state.data.home.cv_elijah} className="btn btn--cv">
-=======
-                <a
-                  href={context.state.data.home.cv_elijah}
-                  className="btn btn--cv"
-                >
->>>>>>> bf686fcb6e918e8e35b42ff103b6d15d6e20e271
                   {context.state.data.home.cv}
                 </a>
               </div>
@@ -57,11 +41,7 @@ const Home = () => {
             </div>
             <div className="container">
               <Link className="portfolio-arrow" smooth to="/#portfolio">
-<<<<<<< HEAD
               {context.state.data.home.portfolio}
-=======
-                {context.state.data.home.portfolio}
->>>>>>> bf686fcb6e918e8e35b42ff103b6d15d6e20e271
                 <img src={arrow} alt="portfolio arrow" />
               </Link>
             </div>
