@@ -26,12 +26,6 @@ const Home = () => {
                 <p>{context.state.data.home.p1}</p>
                 <p>{context.state.data.home.p2}</p>
                 <a href={context.state.data.home.cv_elijah} className="btn btn--cv">
-=======
-                <a
-                  href={context.state.data.home.cv_elijah}
-                  className="btn btn--cv"
-                >
->>>>>>> bf686fcb6e918e8e35b42ff103b6d15d6e20e271
                   {context.state.data.home.cv}
                 </a>
               </div>
@@ -47,7 +41,11 @@ const Home = () => {
             </div>
             <div className="container">
               <Link className="portfolio-arrow" smooth to="/#portfolio">
+<<<<<<< HEAD
               {context.state.data.home.portfolio}
+=======
+                {context.state.data.home.portfolio}
+>>>>>>> bf686fcb6e918e8e35b42ff103b6d15d6e20e271
                 <img src={arrow} alt="portfolio arrow" />
               </Link>
             </div>
