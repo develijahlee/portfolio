@@ -24,10 +24,7 @@ const Main = () => {
         <React.Fragment>
           <Header context={context} />
           <Route exact={true} path="/" component={Home} />
-<<<<<<< HEAD
           <Route exact={true} path="/home" component={Home} />
-=======
->>>>>>> bf686fcb6e918e8e35b42ff103b6d15d6e20e271
           <Route exact={true} path="/testimonials" component={Testimonials} />
           <Route exact={true} path="/about" component={About} />
           <Footer context={context} />
