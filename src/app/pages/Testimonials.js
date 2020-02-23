@@ -44,17 +44,8 @@ const Testimonials = () => {
                 <p>{context.state.data.testimonials.t2p2}</p>
                 <p>{context.state.data.testimonials.t2p3}</p>
                 <p className="signature">
-<<<<<<< HEAD
                   <span className="name">{context.state.data.testimonials.t2name}</span>
                   <span className="workplace">{context.state.data.testimonials.t2workplace}</span>
-=======
-                  <span className="name">
-                    {context.state.data.testimonials.t2name}
-                  </span>
-                  <span className="workplace">
-                    {context.state.data.testimonials.t2workplace}
-                  </span>
->>>>>>> bf686fcb6e918e8e35b42ff103b6d15d6e20e271
                 </p>
               </blockquote>
               {/*
