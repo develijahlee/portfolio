@@ -67,10 +67,7 @@ const Testimonials = () => {
                   <span className="workplace">Yonsei University</span>
                 </p>
               </blockquote>
-<<<<<<< HEAD
               */} 
-=======
-              */}
 >>>>>>> bf686fcb6e918e8e35b42ff103b6d15d6e20e271
             </div>
           </section>
