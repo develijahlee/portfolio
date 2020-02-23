@@ -5,23 +5,14 @@ import React from "react";
 // Import context and provider
 import { MyContext } from "../../context";
 
-<<<<<<< HEAD
 // Import hashlink
 import { HashLink as Link } from "react-router-hash-link";
 
-=======
->>>>>>> bf686fcb6e918e8e35b42ff103b6d15d6e20e271
 // Import images
 import yonsei from "../img/portfolio/yonsei-logo.png";
 import scribe from "../img/portfolio/scribe-logo.png";
 import arrow from "../img/portfolio/portfolio-arrow.png";
 
-<<<<<<< HEAD
-=======
-// Import hashlink
-import { HashLink as Link } from "react-router-hash-link";
-
->>>>>>> bf686fcb6e918e8e35b42ff103b6d15d6e20e271
 const Home = () => {
   return (
     <MyContext.Consumer>
