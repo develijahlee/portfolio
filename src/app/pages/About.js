@@ -7,10 +7,13 @@ import { MyContext } from "../../context";
 
 // Import images
 import html from "../img/skills/HTML.png";
-import css from "../img/skills/css.png";
+import css from "../img/skills/css3.png";
 import js from "../img/skills/js.png";
-import wp from "../img/skills/wp.png";
+import gq from "../img/skills/graphql.png";
+//import wp from "../img/skills/wp.png";
 import react from "../img/skills/react.png";
+import gatsby from "../img/skills/gatsby.png";
+import netlify from "../img/skills/netlify.png";
 import figma from "../img/skills/figma.png";
 
 const About = () => {
@@ -46,12 +49,20 @@ const About = () => {
                 <figcaption>JavaScript</figcaption>
               </figure>
               <figure>
-                <img src={wp} alt="WordPress logo" />
-                <figcaption>WordPress</figcaption>
+                <img src={gq} alt="GraphQL logo" />
+                <figcaption>GraphQL</figcaption>
               </figure>
               <figure>
                 <img src={react} alt="Reactjs logo" />
                 <figcaption>Reactjs</figcaption>
+              </figure>
+              <figure>
+                <img src={gatsby} alt="Gatsby logo" />
+                <figcaption>Gatsby</figcaption>
+              </figure>
+              <figure>
+                <img src={netlify} alt="Netlify logo" />
+                <figcaption>Netlify</figcaption>
               </figure>
               <figure>
                 <img src={figma} alt="Figma logo" />
